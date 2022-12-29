@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MICROSOFT TEAMS</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+</head>
+<body>
+    <header>
+        <div class="center white">Training Session (html & css)</div>
+        <div class="rightIcons white">
+            <div class="minimize">
+                <ion-icon name="remove-outline" class="icons"></ion-icon>
+            </div>
+            <div class="maximize">
+                <ion-icon name="copy-outline" class="icons"></ion-icon>
+            </div>
+            <div class="close">
+                <ion-icon name="close-outline" class="icons"></ion-icon>
+            </div>
+
+        </div>
+    </header>
+    <div class="container">
+        <div class="timing white">
+            <div class="ion-icons">
+                <ion-icon name="shield-outline"></ion-icon>
+            </div>
+            <p class="timeDuration"></p>
+        </div>
+        <div class="outerDiv">
+            <div class="ion-icons-set lightgrey people">
+                <ion-icon name="people-outline" class="icons"></ion-icon>
+                <span class="block">People</span>
+                <span class="underline"></span>
+            </div>
+            <div class="ion-icons-set lightgrey chat">
+               <ion-icon name="chatbubble-ellipses-outline" class="icons"></ion-icon>
+               <span class="block">Chat</span>
+               <span class="underline2"></span>
+            </div>
+            <div class="ion-icons-set lightgrey alertCls reaction">
+                <ion-icon name="happy-outline" class="icons"></ion-icon><span class="block">Reactions</span>
+                <div class="reactEmojies">
+                    <ion-icon name="thumbs-up-sharp" class="yellow emojies"></ion-icon>
+                    <ion-icon name="heart-sharp" class="red emojies"></ion-icon>
+                    <ion-icon name="happy-sharp" class="yellow emojies"></ion-icon>
+                    <ion-icon name="sad-sharp" class="yellow emojies"></ion-icon>
+                    <ion-icon name="hand-right" class="yellow emojies"></ion-icon>
+                </div>
+            </div>
+            <div class="ion-icons-set lightgrey alertCls">
+                <ion-icon name="home-outline" class="icons"></ion-icon><span class="block">Rooms</span>
+            </div>
+            <div class="ion-icons-set lightgrey alertCls">
+                <ion-icon name="add-outline" class="icons"></ion-icon><span class="block">Apps</span>
+            </div>
+            <div class="ion-icons-set lightgrey line1 alertCls">
+                <ion-icon name="ellipsis-horizontal-outline" class="icons"></ion-icon><span class="block">More</span>
+            </div>
+            <div class="ion-icons-set white alertCls exampleAlert">
+                <ion-icon name="videocam-off" class="icons"></ion-icon><span class="block">Camera</span>
+            </div>
+            <div class="ion-icons-set white alertCls">
+                <ion-icon name="mic" class="icons"></ion-icon><span class="block alignMic">Mic</span>
+            </div>
+            <div class="ion-icons-set white alertCls">
+                <ion-icon name="share" class="icons"></ion-icon><span class="block">Share</span>
+            </div>
+            <div class="leaveBtn">
+                <ion-icon name="call" class="callIcon white"></ion-icon>
+                <span class="white leaveTxt">Leave</span>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="outer-bg"></div>
+    <div class="mainContainer">
+        <div class="bodyContent">
+            <div class="bodyInner">
+                <div class="itemsOuter active itemsOuter1">
+                    <div class="bodyItems">
+                        <div class="person person1">
+                            <span class="personInitials initial1">AM</span>
+                            <img src="./images/pic2-3.jpg" class="image"/>
+                        </div>
+                        <span class="personName white">Ahish Murugesan</span>
+                    </div>
+                </div>
+                <div class="itemsOuter active itemsOuter2">
+                    <div class="bodyItems">
+                        <div class="person person2"><span class="personInitials initial2">BS</span></div>
+                        <span class="personName white">Baranidaran Swaminathan</span>
+                    </div>
+                </div>
+                <div class="itemsOuter active itemsOuter3">
+                    <div class="bodyItems">
+                        <div class="person person3"><span class="personInitials initial3">SM</span></div>
+                        <span class="personName white">Sabari Mathivanan</span>
+                    </div>
+                </div>
+                <div class="itemsOuter active itemsOuter4">
+                    <div class="bodyItems">
+                        <div class="person person4"><span class="personInitials initial4">TN</span></div>
+                        <span class="personName white">Tamilselvan Nachimuthu</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bodyBottom">
+                <div class="bottomBox">
+                    <img src="./images/Profile.PNG" alt="Profile" class="profile">
+                </div>
+            </div>
+        </div>
+        <div class="rightContent">
+            <div class="heading">
+                Participants
+                <span class="closeIcon">
+                    <ion-icon name="close-outline" class="icons white"></ion-icon>
+                </span>
+            </div>
+            <div class="searchBox">
+                <input type="text" placeholder="Type a name" class="search">
+            </div>
+            <div class="totalMembers">
+                <p class="white members">
+                    <span class="dwnArrow"><ion-icon name="caret-down" class="downArrow"></ion-icon></span>
+                    Currently in this call(<span class="participantCount">4</span>)
+                    <span class="muteBtn white">Mute all</span>
+                </p>
+            </div>
+            <div class="bodyInner subBodyInner active count1">
+                <div class="bodyItems subBodyItems subItem1 pCount">
+                    <div class="person person1 subPerson">
+                        <span class="personInitials initial1 subInitial">AM</span>
+                        <img src="./images/pic2-3.jpg" class="image subImage"/>
+                    </div>
+                    <span class="personName white subName">Ahish Murugesan</span>
+                    <ion-icon name="mic-off-outline" class="mic white"></ion-icon>
+                    <ion-icon name="ellipsis-horizontal" class="white action action1"></ion-icon>
+                    <ul class="actionUl action-ul-1">
+                        <li class="list1 remove1 white removeBtn">Remove</li>
+                    </ul>
+                </div>
+                <div class="bodyItems subBodyItems subItem2 pCount">
+                    <div class="person person2 subPerson"><span class="personInitials initial2 subInitial">BS</span></div>
+                    <span class="personName white subName">Baranidaran Swaminathan</span>
+                    <ion-icon name="mic-off-outline" class="mic white"></ion-icon>
+                    <ion-icon name="ellipsis-horizontal" class="white action action2"></ion-icon></ion-icon>
+                    <ul class="actionUl action-ul-2">
+                        <li class="list1 remove2 white removeBtn">Remove</li>
+                    </ul>
+                </div>
+                <div class="bodyItems subBodyItems subItem3 pCount">
+                    <div class="person person3 subPerson"><span class="personInitials initial3 subInitial">SM</span></div>
+                    <span class="personName white subName">Sabari Mathivanan</span>
+                    <ion-icon name="mic-off-outline" class="mic white"></ion-icon>
+                    <ion-icon name="ellipsis-horizontal" class="white action action3"></ion-icon></ion-icon>
+                    <ul class="actionUl action-ul-3">
+                        <li class="list1 remove3 white removeBtn">Remove</li>
+                    </ul>
+                </div>
+                <div class="bodyItems subBodyItems subItem4 pCount">
+                    <div class="person person4 subPerson"><span class="personInitials initial4 subInitial">TN</span></div>
+                    <span class="personName white subName">Tamilselvan Nachimuthu</span>
+                    <ion-icon name="mic" class="mic white"></ion-icon>
+                    <ion-icon name="ellipsis-horizontal" class="white action action4"></ion-icon></ion-icon>
+                    <ul class="actionUl action-ul-4">
+                        <li class="list1 remove4 white removeBtn">Remove</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="totalMembers2">
+                <p class="white members">
+                    <span class="dwnArrow2"><ion-icon name="caret-down" class="downArrow2"></ion-icon></span>
+                    Others Invited(<span class="othersCount">2</span>)
+                </p>
+            </div>
+            <div class="otherItems active">
+                <div class="bodyItems subBodyItems oCount">
+                    <div class="person person2 subPerson"><span class="personInitials initial2 subInitial subInitial-6">WB</span></div>
+                    <span class="personName white subName">Walter Bhaskar</span>
+                    <span class="muteBtn white rqstBtn">Request to join</span>
+                </div>
+                <div class="bodyItems subBodyItems oCount">
+                    <div class="person person1 subPerson"><span class="personInitials initial1 subInitial">DS</span></div>
+                    <span class="personName white subName">Dhanush Subramaniam</span>
+                    <span class="muteBtn white rqstBtn">Request to join</span>
+                </div>
+                <div class="subDiv othersSub1">
+                    <div class="bodyItems subBodyItems">
+                        <div class="person person1 subPerson">
+                            <span class="personInitials initial1 subInitial">AM</span>
+                            <img src="./images/pic2-3.jpg" class="image subImage"/>
+                        </div>
+                        <span class="personName white subName">Ahish Murugesan</span>
+                        <ion-icon name="ellipsis-horizontal" class="white action action1"></ion-icon>
+                        <ul class="actionUl action-ul-1">
+                            <li class="list1 add1 white addBtn">Add</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="subDiv othersSub2">
+                    <div class="bodyItems subBodyItems">
+                        <div class="person person2 subPerson"><span class="personInitials initial2 subInitial">BS</span></div>
+                        <span class="personName white subName">Baranidaran Swaminathan</span>
+                        <ion-icon name="ellipsis-horizontal" class="white action action2"></ion-icon></ion-icon>
+                        <ul class="actionUl action-ul-2">
+                            <li class="list1 add2 white addBtn">Add</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="subDiv othersSub3">
+                    <div class="bodyItems subBodyItems">
+                        <div class="person person3 subPerson"><span class="personInitials initial3 subInitial">SM</span></div>
+                        <span class="personName white subName">Sabari Mathivanan</span>
+                        <ion-icon name="ellipsis-horizontal" class="white action action3"></ion-icon></ion-icon>
+                        <ul class="actionUl action-ul-3">
+                            <li class="list1 add3 white addBtn">Add</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="subDiv othersSub4">
+                    <div class="bodyItems subBodyItems">
+                        <div class="person person4 subPerson"><span class="personInitials initial4 subInitial">TN</span></div>
+                        <span class="personName white subName">Tamilselvan Nachimuthu</span>
+                        <ion-icon name="ellipsis-horizontal" class="white action action4"></ion-icon></ion-icon>
+                        <ul class="actionUl action-ul-4">
+                            <li class="list1 add4 white addBtn">Add</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chatContent">
+            <div class="chatInner">
+                <div class="topContent">
+                    <div class="heading">
+                        Meeting Chat
+                        <span class="closeIcon">
+                            <ion-icon name="close-outline" class="icons white"></ion-icon>
+                        </span>
+                    </div>
+                </div>
+                <div class="bottomContent">
+                    <div class="messages">
+                        <div class="receivedMsg">
+                            <span class="name">Baranidaran Swaminathan</span>
+                            <span id="time"></span>
+                            <p class="chatPara receive">Hi</p>
+                            <div class="person person2 subPerson chatProfile">
+                                <span class="personInitials initial2 subInitial">BS</span>
+                                <div class="status"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="msgBox">
+                        <input type="text" placeholder="Type a message" class="search msg">
+                        <ion-icon name="send-outline" class="submitBtn"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $(".people").click(function(){
+                if($(".rightContent").hasClass("active")){
+                    $(".rightContent").removeClass("active");
+                    $(".bodyContent").removeClass("bodyPad");
+                    $(".rightContent").removeClass("rightContentPro");
+                    $(".itemsOuter").removeClass("itemsPro");
+                    $(".bodyContent").css({"width" :"100%"});
+                    $(".underline").removeClass("active");
+                }
+                else{
+                    $(".rightContent").addClass("active");
+                    $(".bodyContent").addClass("bodyPad");
+                    $(".rightContent").addClass("rightContentPro");
+                    $(".bodyContent").css({"width" :"77%"});
+                    $(".itemsOuter").addClass("itemsPro");
+                    $(".underline").addClass("active");
+                    $(".chatContent").removeClass("active");
+                    $(".underline2").removeClass("active");
+                }
+            });
+            $(".closeIcon").click(function(){
+                $(".rightContent").css("animation","fadeOutRight");
+                $(".rightContent").removeClass("active");
+                $(".bodyContent").removeClass("bodyPad");
+                $(".rightContent").removeClass("rightContentPro");
+                $(".chatContent").removeClass("chatContentPro");
+                $(".bodyContent").css({"width" :"100%"});
+                $(".underline").removeClass("active");
+                $(".chatContent").removeClass("active");
+                $(".bodyContent").css({"width" :"100%"});
+                $(".underline2").removeClass("active");
+                $(".itemsOuter").removeClass("itemsPro");
+                $(".chatInner").removeClass("chatPro");
+            });
+            $(".downArrow").click(function(){
+                if($(".subBodyInner").hasClass("active")){
+                    $(".subBodyInner").removeClass("active");
+                    $(".downArrow").css({"transform":"rotate(270deg)"});
+                }
+                else{
+                    $(".subBodyInner").addClass("active");
+                    $(".downArrow").css({"transform":"rotate(0deg)"});
+                }
+            });
+            $(".downArrow2").click(function(){
+                if($(".otherItems").hasClass("active")){
+                    $(".otherItems").removeClass("active");
+                    $(".downArrow2").css({"transform":"rotate(270deg)"});
+                }
+                else{
+                    $(".otherItems").addClass("active");
+                    $(".downArrow2").css({"transform":"rotate(0deg)"});
+                }
+            });
+            $(".chat").click(function(){
+                if($(".chatContent").hasClass("active")){
+                    $(".chatContent").removeClass("active");
+                    $(".bodyContent").removeClass("bodyPad");
+                    $(".chatContent").removeClass("chatContentPro");
+                    $(".chatInner").removeClass("chatPro");
+                    $(".itemsOuter").removeClass("itemsPro");
+                    $(".bodyContent").css({"width" :"100%"});
+                    $(".underline2").removeClass("active");
+                }
+                else{
+                    $(".chatContent").addClass("active");
+                    $(".chatContent").addClass("chatContentPro");
+                    $(".chatInner").addClass("chatPro");
+                    $(".itemsOuter").addClass("itemsPro");
+                    $(".bodyContent").addClass("bodyPad");
+                    $(".bodyContent").css({"width" :"77%"});
+                    $(".underline2").addClass("active");
+                    $(".rightContent").removeClass("active");
+                    $(".underline").removeClass("active");
+                }
+            });
+            $(".submitBtn").click(function(){
+                var getMessage = $(".msg").val();
+                var today = new Date();
+                var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+                if(getMessage!==""){
+                    var newMessage = "<div class='chatPara send active'><span class='messageContent'>" + getMessage + "</span>" +
+                        "<span class='sendTime'>"+ time +"</span>" +
+                        "<ion-icon name='ellipsis-horizontal' class='menuAction white'></ion-icon>" +
+                        "<div class='editMsg'><span class='editBtn'>Edit</span><span class='deleteBtn'>Delete</span></div>" +
+                        "</div>";
+                    //var profile = "<div class='person person3 subPerson myProfile'><span class='personInitials initial3 subInitial chatSendInitial'>SM</span></div>";
+
+                    $(".messages").append(newMessage);
+                    $(".msg").val("");
+                }
+                else{
+                    alert("Type some text!");
+                }
+                $(".menuAction").on("click",function(){
+                    //alert($(this).parent().html());
+                    if($(".editMsg").hasClass("active")){
+                        $(".editMsg").removeClass("active");
+                    }
+                    else{
+                        $(this).parent().find(".editMsg").addClass("active");
+                        $(".outer-bg").addClass("active");
+                    }
+                });
+                $(".deleteBtn").on("click" ,function(){
+                    $(this).parent().parent(".send").remove();
+                });
+                $(".editBtn").on("click" ,function(){
+                    //alert($(this).parent().siblings(".messageContent").html());
+                    $(this).parent().siblings(".messageContent").attr("contenteditable","true");
+                    $(".editMsg").removeClass("active");
+                    $(".outer-bg").addClass("active");
+                });
+            });
+            $(".outer-bg").click(function(){
+                $(".actionUl").removeClass("active");
+                $(".outer-bg").removeClass("active");
+                $(".editMsg").removeClass("active");
+                $(".messageContent").attr("contenteditable","false");
+            });
+            $(".action1").click(function(){
+                if($(".actionUl").hasClass("active")){
+                    $(".actionUl").removeClass("active");
+                }
+                else{
+                    $(".action-ul-1").addClass("active");
+                    $(".outer-bg").addClass("active");
+                }
+            });
+            $(".action2").click(function(){
+                if($(".actionUl").hasClass("active")){
+                    $(".actionUl").removeClass("active");
+                }
+                else{
+                    $(".action-ul-2").addClass("active");
+                    $(".outer-bg").addClass("active");
+                }
+            });
+            $(".action3").click(function(){
+                if($(".actionUl").hasClass("active")){
+                    $(".actionUl").removeClass("active");
+                }
+                else{
+                    $(".action-ul-3").addClass("active");
+                    $(".outer-bg").addClass("active");
+                }
+            });
+            $(".action4").click(function(){
+                if($(".actionUl").hasClass("active")){
+                    $(".actionUl").removeClass("active");
+                }
+                else{
+                    $(".action-ul-4").addClass("active");
+                    $(".outer-bg").addClass("active");
+                }
+            });
+            $(".add1").click(function(){
+                $(".itemsOuter1").show();
+                $(".subItem1").show();
+                $(".subItem1").addClass("pCount");
+                $(".othersSub1").removeClass("oCount");
+                $(".othersSub1").hide();
+                $(".action-ul-1").removeClass("active");
+
+                $(".participantCount").text($(".count1 .pCount").length);
+                $(".othersCount").text($(".otherItems .oCount").length);
+            });
+            $(".remove1").click(function(){
+                $(".itemsOuter1").hide();
+                $(".subItem1").hide();
+                $(".subItem1").removeClass("pCount");
+                $(".othersSub1").addClass("oCount");
+                $(".othersSub1").show();
+                $(".action-ul-1").removeClass("active");
+                $(".participantCount").text($(".count1 .pCount").length);
+                $(".othersCount").text($(".otherItems .oCount").length);
+            });
+            $(".add2").click(function(){
+                $(".itemsOuter2").show();
+                $(".subItem2").show();
+                $(".subItem2").addClass("pCount");
+                $(".othersSub2").removeClass("oCount");
+                $(".othersSub2").hide();
+                $(".action-ul-2").removeClass("active");
+                $(".participantCount").text($(".count1 .pCount").length);
+                $(".othersCount").text($(".otherItems .oCount").length);
+            });
+            $(".remove2").click(function(){
+                $(".itemsOuter2").hide();
+                $(".subItem2").hide();
+                $(".subItem2").removeClass("pCount");
+                $(".othersSub2").addClass("oCount");
+                $(".othersSub2").show();
+                $(".action-ul-2").removeClass("active");
+                $(".participantCount").text($(".count1 .pCount").length);
+                $(".othersCount").text($(".otherItems .oCount").length);
+            });
+            $(".add3").click(function(){
+                $(".itemsOuter3").show();
+                $(".subItem3").show();
+                $(".subItem3").addClass("pCount");
+                $(".othersSub3").removeClass("oCount");
+                $(".othersSub3").hide();
+                $(".action-ul-3").removeClass("active");
+                $(".participantCount").text($(".count1 .pCount").length);
+                $(".othersCount").text($(".otherItems .oCount").length);
+            });
+            $(".remove3").click(function(){
+                $(".itemsOuter3").hide();
+                $(".subItem3").hide();
+                $(".subItem3").removeClass("pCount");
+                $(".othersSub3").addClass("oCount");
+                $(".othersSub3").show();
+                $(".action-ul-3").removeClass("active");
+                $(".participantCount").text($(".count1 .pCount").length);
+                $(".othersCount").text($(".otherItems .oCount").length);
+            });
+            $(".add4").click(function(){
+                $(".itemsOuter4").show();
+                $(".subItem4").show();
+                $(".subItem4").addClass("pCount");
+                $(".othersSub4").removeClass("oCount");
+                $(".othersSub4").hide();
+                $(".action-ul-4").removeClass("active");
+                $(".participantCount").text($(".count1 .pCount").length);
+                $(".othersCount").text($(".otherItems .oCount").length);
+            });
+            $(".remove4").click(function(){
+                $(".itemsOuter4").hide();
+                $(".subItem4").hide();
+                $(".subItem4").removeClass("pCount");
+                $(".othersSub4").addClass("oCount");
+                $(".othersSub4").show();
+                $(".action-ul-4").removeClass("active");
+                $(".participantCount").text($(".count1 .pCount").length);
+                $(".othersCount").text($(".otherItems .oCount").length);
+            });
+            // $(".addBtn").click(function(){
+            //     if($(".bodyInner").find(".itemsOuter")){
+            //         $(this).addClass("active");
+            //     }
+            // });
+            // $(".removeBtn").click(function(){
+            //     if($(".bodyInner").find(".itemsOuter")){
+            //         $(this).removeClass("active");
+            //     }
+            // });
+            $(".alertCls").click(function(){
+                $(".rightContent").removeClass("active");
+                $(".chatContent").removeClass("active");
+                $(".underline2").removeClass("active");
+                $(".underline").removeClass("active");
+                $(".bodyContent").css({"width" :"100%"});
+                alert("Coming Soon!");
+            });
+            var today = new Date();
+            var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+            $("#time").append(time);
+            $(".timeDuration").append(time)
+        });
+    </script>
+</body>
+</html>
